@@ -32,6 +32,9 @@ public class Ejercicio1 {
         // Imprimimos el resultado de cada una de las funciones
         System.out.println("El resultado de tipo integer es: " + suma(num1int, num2int));
         System.out.println("El resultado de tipo integer es: " + suma(num1double, num2double));
+        
+        // Cerramos escaner
+        key.close();
     }
 
 }
