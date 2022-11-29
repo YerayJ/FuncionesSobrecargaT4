@@ -15,12 +15,13 @@ public class Ejercicio3 {
     }
 
     // Creamos función de tipo int le pedimos dos valores de tipo int
+    // Precondición: num1 < num2
     static int sumaEnteros(int num1, int num2) {
         // Creamos la variable res para almacenar resultado
         int res = 0;
         // En este bucle comprobamos cual es el menor para empezar y le sumamos uno ya
         // que solo queremos el rango. Llegará hasta el número mayor entre ellos.
-        for (int i = (num1 > num2 ? num1 : num2) + 1; i < (num1 < num2 ? num2 : num1); i++) {
+        for (int i = num1 + 1; i < num2; i++) {
             // Por cada vuelta le sumamos i al resultado
             res += i;
         }
